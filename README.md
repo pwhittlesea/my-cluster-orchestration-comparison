@@ -16,8 +16,8 @@ Comparing:
 
 | API support | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp |
 | --------------- | --- | --- | --- | --- | --- | --- | --- |
-| [Docker Machine](https://docs.docker.com/machine/) Support | N | N | | Y | | | |
-| [Docker Swarm](https://docs.docker.com/swarm/) | N | N | | | | Y | |
+| [Docker Machine](https://docs.docker.com/machine/) | N | N | | Y | |   | |
+| [Docker Swarm](https://docs.docker.com/swarm/)     | N | N | |   | | Y | |
 
 |  Must Have Requirement | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp |
 | --------------- | --- | --- | --- | --- | --- | --- | --- |
