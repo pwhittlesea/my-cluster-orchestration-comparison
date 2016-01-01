@@ -34,19 +34,19 @@ Key:
 
 | Should Have Requirement | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp | lattice | helios | deis |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Service Discovery of External services (E.g. RDS) | [?](#ecs-service-discovery-of-external-services) | [?](#k8s-service-discovery-of-external-services) |   | Y | N | | | | | |
-| Multi-tenancy                                     | N                                                | [Y](#k8s-multi-tenancy)                          |   | Y | Y | | | | | |
-| Tagging                                           | N                                                | Y                                                |   | Y | Y | | | | | |
+| Service Discovery of External services (E.g. RDS) | [?](#ecs-service-discovery-of-external-services) | [?](#k8s-service-discovery-of-external-services) | N | Y | N | | | | | |
+| Multi-tenancy                                     | N                                                | [Y](#k8s-multi-tenancy)                          | Y | Y | Y | | | | | |
+| Tagging                                           | N                                                | Y                                                | Y | Y | Y | | | | | |
 | Random port for services (no host/port conflicts) | N                                                | Y                                                | Y | Y | Y | | | | | |
 
 | Nice To Have Requirement | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp | lattice | helios | deis |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Rolling Updates              | Y                     | Y                               |   | Y |   |   |   |   |   |   |
-| Autoscaling of Services      | [?](#ecs-autoscaling) | [?](#k8s-autoscaling)           |   |   |   |   |   |   |   |   |
-| Secure inter-container comms | N                     | N                               | Y |   |   |   |   |   |   |   |
+| Rolling Updates              | Y                     | Y                               | Y | Y |   |   |   |   |   |   |
+| Autoscaling of Services      | [?](#ecs-autoscaling) | [?](#k8s-autoscaling)           | N | N |   |   |   |   |   |   |
+| Secure inter-container comms | N                     | N                               | Y | N |   |   |   |   |   |   |
 | Manage public load balancers | N                     | [Y](#k8s-public-load-balancers) | N | N | N | N | N | N | N | N |
 | UI                           | Y                     | [?](#k8s-ui)                    | Y | Y | Y |   |   |   |   |   |
-| Service Graph                | N                     | N                               |   | Y |   |   |   |   |   |   |
+| Service Graph                | N                     | N                               | N | Y |   |   |   |   |   |   |
 
 | API support | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp | lattice | helios | deis |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
