@@ -15,7 +15,7 @@ Comparing:
 
 | Project Status | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp | lattice | helios | deis |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Production Ready (not beta/alpha) | Y | Y | N | N | Y | ? | N |
+| Production Ready (not beta/alpha) | Y | Y | N | N | Y | ? | N | ? | Y | Y |
 
 | API support | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp | lattice | helios | deis |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
