@@ -17,11 +17,6 @@ Comparing:
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Production Ready (not beta/alpha) | Y | Y | N | N | Y | ? | N | ? | Y | Y |
 
-| API support | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp | lattice | helios | deis |
-| --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [Docker Machine](https://docs.docker.com/machine/) | N | N | N | Y | N | N | N                        | N | N | N |
-| [Docker Swarm](https://docs.docker.com/swarm/)     | N | N | N | N | N | Y | [?](#vamp-swarm-support) | N | N | N |
-
 |  Must Have Requirement | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp | lattice | helios | deis |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Service Discovery by DNS        | [?](#ecs-service-discovery-by-dns) | Y                                  | Y                             | Y |   | | | | | |
@@ -46,6 +41,11 @@ Comparing:
 | Manage public load balancers   | N                     | [Y](#k8s-public-load-balancers) |   |   |   | | | | | |
 | UI                             | Y                     | [?](#k8s-ui)                    | Y | Y | Y | | | | | |
 | Service Graph                  | N                     | N                               |   | Y |   | | | | | |
+
+| API support | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp | lattice | helios | deis |
+| --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [Docker Machine](https://docs.docker.com/machine/) | N | N | N | Y | N | N | N                        | N | N | N |
+| [Docker Swarm](https://docs.docker.com/swarm/)     | N | N | N | N | N | Y | [?](#vamp-swarm-support) | N | N | N |
 
 ## Notes
 ## EC2 Container Service (ECS)
