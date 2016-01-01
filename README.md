@@ -3,24 +3,38 @@ A comparison of Cluster Orchestration Solutions.
 
 | Requirement | [ECS](https://aws.amazon.com/ecs/details/) | [Kubernetes](http://kubernetes.io) | [Tutum](https://www.tutum.co) | [Rancher](http://rancher.com) | [Mesosphere](https://mesosphere.com) |
 | --------------- | --- | --- | --- | --- | --- |
-| Production Ready (not beta/alpha) | | Y | N | N | Y |
-| [Docker Machine](https://docs.docker.com/machine/) Support | | N | | Y | |
-| Service Discovery by DNS | | Y | Y | Y | |
-| Service Discovery of External services (E.g. RDS) | | [?](#k8s-service-discovery-of-external-services) | | | |
-| Rolling Updates | | Y | | Y | |
-| Local Deployments (testing) | | Y | [Y](#tutum-local-deployments) | Y | Y |
-| Autoscaling of Services | | [?](#k8s-autoscaling) | | | |
-| Private Docker registry support | | [Y](#k8s-private-registry-support) | | | |
-| Multi-tenancy | | [Y](#k8s-multi-tenancy) | | Y | |
+| Production Ready (not beta/alpha) | Y | Y | N | N | Y |
+| [Docker Machine](https://docs.docker.com/machine/) Support | N | N | | Y | |
+| Service Discovery by DNS | [?](#ecs-service-discovery-by-dns) | Y | Y | Y | |
+| Service Discovery of External services (E.g. RDS) | [?](#ecs-service-discovery-of-external-services) | [?](#k8s-service-discovery-of-external-services) | | | |
+| Rolling Updates | Y | Y | | Y | |
+| Local Deployments (testing) | N | Y | [Y](#tutum-local-deployments) | Y | Y |
+| Autoscaling of Services | [?](#ecs-autoscaling) | [?](#k8s-autoscaling) | | | |
+| Private Docker registry support | [?](#ecs-private-registry-support) | [Y](#k8s-private-registry-support) | | | |
+| Multi-tenancy | N | [Y](#k8s-multi-tenancy) | | Y | |
 | Secure container communication | | | Y | | |
-| Manage public load balancers | | [Y](#k8s-public-load-balancers) | | | |
-| Service Health Checks | | Y | | Y | |
-| UI | | [?](#k8s-ui) | Y | Y | Y |
-| Container failure recovery (start another) | | Y | Y | Y | Y |
-| Tagging | | Y | | Y | |
-| Service Graph | |N | | Y | |
+| Manage public load balancers | N | [Y](#k8s-public-load-balancers) | | | |
+| Service Health Checks | [?](#ecs-health-checks) | Y | | Y | |
+| UI | Y | [?](#k8s-ui) | Y | Y | Y |
+| Container failure recovery (start another) | Y | Y | Y | Y | Y |
+| Tagging | N | Y | | Y | |
+| Service Graph | N |N | | Y | |
+| Random port for services (no host/port conflicts) | N | Y | | |
 
 ## Notes
+## EC2 Container Service (ECS)
+#### ECS Service Discovery by DNS
+I really want to mark this as no but it does support it. You have to create an internal ELB and a Route 53 entry for your service.
+It is by no means easy and in my opinion forces Developers to delve into the hardware which takes away isolation of architecture layers.
+#### ECS Service Discovery of External Services
+Can be done by creating a Route 53 entity.
+#### ECS Autoscaling
+I think this can be done if you set up Cloudwatch.
+#### ECS Private Registry Support
+Have to add credentials to all hardware hosts before system start. Really clumsy (changing whilst running would suck).
+#### ECS Health Checks
+It will check if the container has stopped. Pretty sure thats it. Unless its behind a ELB.
+
 ## Kubernetes
 #### K8S Service Discovery of External Services
 You can create 'services' which map to static IPs but you cannot currently create a 'CNAME' for a service. This is unsuiltable for something that may change IP, like RDS.
