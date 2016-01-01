@@ -3,10 +3,11 @@ A comparison of Cluster Orchestration Solutions.
 
 | Requirement | [Kubernetes](http://kubernetes.io) | [Tutum](https://www.tutum.co) | [Rancher](http://rancher.com) | [Mesosphere](https://mesosphere.com) |
 | --------------- | --- | --- | --- | --- |
-| Production Ready (not beta/alpha) | Y | N | N | |
+| Production Ready (not beta/alpha) | Y | N | N | Y |
+| [Docker Machine](https://docs.docker.com/machine/) Support | N | | Y | |
 | Service Discovery by DNS | Y | Y | Y | |
 | Service Discovery of External services (E.g. RDS) | [?](#k8s-service-discovery-of-external-services) | | | |
-| Rolling Updates | Y | | | |
+| Rolling Updates | Y | | Y | |
 | Local Deployments | Y | [Y](#tutum-local-deployments) | | |
 | Autoscaling of Services | [?](#k8s-autoscaling) | | | |
 | Private Docker registry support | [Y](#k8s-private-registry-support) | | | |
