@@ -1,5 +1,5 @@
-# my-cluster-orchestration-comparison
-A comparison of Cluster Orchestration Solutions
+# My Cluster Orchestration Tool Comparison
+A comparison of Cluster Orchestration Solutions.
 
 | Requirement | [Kubernetes](http://kubernetes.io) | [Tutum](https://www.tutum.co) | [Rancher](http://rancher.com) |
 | --------------- | --- | --- | --- |
@@ -12,6 +12,7 @@ A comparison of Cluster Orchestration Solutions
 | Autoscaling of Services | [?](#k8s-autoscaling) | | |
 | Private Docker registry support | [Y](#k8s-private-registry-support) | | |
 | Deploy multiple Clusters at the same time | [Y](#k8s-multiple-clusters) | | |
+| Secure container communication | | Y | |
 
 ## Notes
 ## Kubernetes
