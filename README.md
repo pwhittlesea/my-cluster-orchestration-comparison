@@ -19,8 +19,8 @@ Comparing:
 
 | API support | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp | lattice | helios | deis |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [Docker Machine](https://docs.docker.com/machine/) | N | N | | Y | | N | N                        | N | N | N |
-| [Docker Swarm](https://docs.docker.com/swarm/)     | N | N | |   | | Y | [?](#vamp-swarm-support) | N | N | N |
+| [Docker Machine](https://docs.docker.com/machine/) | N | N | N | Y | N | N | N                        | N | N | N |
+| [Docker Swarm](https://docs.docker.com/swarm/)     | N | N | N | N | N | Y | [?](#vamp-swarm-support) | N | N | N |
 
 |  Must Have Requirement | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp | lattice | helios | deis |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
