@@ -12,12 +12,12 @@ A comparison of Cluster Orchestration Solutions.
 | Private Docker registry support | [?](#ecs-private-registry-support) | [Y](#k8s-private-registry-support) | | | |
 | Service Health Checks | [?](#ecs-health-checks) | Y | | Y | |
 | Container failure recovery (start another) | Y | Y | Y | Y | Y |
-| *Should Have* | --- | --- | --- | --- | --- |
+| ***Should Have*** | | | | | |
 | Service Discovery of External services (E.g. RDS) | [?](#ecs-service-discovery-of-external-services) | [?](#k8s-service-discovery-of-external-services) | | | |
 | Multi-tenancy | N | [Y](#k8s-multi-tenancy) | | Y | |
 | Tagging | N | Y | | Y | |
 | Random port for services (no host/port conflicts) | N | Y | | |
-| *Nice to have* | --- | --- | --- | --- | --- |
+| ***Nice to have*** | | | | | |
 | Rolling Updates | Y | Y | | Y | |
 | Autoscaling of Services | [?](#ecs-autoscaling) | [?](#k8s-autoscaling) | | | |
 | Secure container communication | | | Y | | |
