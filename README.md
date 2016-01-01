@@ -14,6 +14,8 @@ A comparison of Cluster Orchestration Solutions.
 | Deploy multiple Clusters at the same time | [Y](#k8s-multiple-clusters) | | | |
 | Secure container communication | | Y | | |
 | Manage public load balancers | [Y](#k8s-public-load-balancers) | | | |
+| Service Health Checks | Y | | Y | |
+| UI | ? | | | |
 
 ## Notes
 ## Kubernetes
