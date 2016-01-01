@@ -2,7 +2,7 @@
 A comparison of Cluster Orchestration Solutions.
 
 | Requirement | [Kubernetes](http://kubernetes.io) | [Tutum](https://www.tutum.co) | [Rancher](http://rancher.com) | [Mesosphere](https://mesosphere.com) |
-| --------------- | --- | --- | --- |
+| --------------- | --- | --- | --- | --- |
 | Production Ready (not beta/alpha) | Y | N | N | |
 | Service Discovery by IP | Y | N | | |
 | Service Discovery by DNS | Y | Y | | |
