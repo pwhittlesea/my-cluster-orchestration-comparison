@@ -16,10 +16,11 @@ A comparison of Cluster Orchestration Solutions.
 | Private Docker registry support | [?](#ecs-private-registry-support) | [Y](#k8s-private-registry-support) | | | |
 | Service Health Checks | [?](#ecs-health-checks) | Y | | Y | |
 | Container failure recovery (start another) | Y | Y | Y | Y | Y |
+| API/CLI | Y | Y | | Y | Y |
 
 | Should Have Requirement | [ECS](https://aws.amazon.com/ecs/details/) | [Kubernetes](http://kubernetes.io) | [Tutum](https://www.tutum.co) | [Rancher](http://rancher.com) | [Mesosphere](https://mesosphere.com) |
 | --------------- | --- | --- | --- | --- | --- |
-| Service Discovery of External services (E.g. RDS) | [?](#ecs-service-discovery-of-external-services) | [?](#k8s-service-discovery-of-external-services) | | | |
+| Service Discovery of External services (E.g. RDS) | [?](#ecs-service-discovery-of-external-services) | [?](#k8s-service-discovery-of-external-services) | | Y | |
 | Multi-tenancy | N | [Y](#k8s-multi-tenancy) | | Y | |
 | Tagging | N | Y | | Y | |
 | Random port for services (no host/port conflicts) | N | Y | | |
