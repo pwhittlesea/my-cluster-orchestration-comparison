@@ -4,9 +4,9 @@ A comparison of Cluster Orchestration Solutions.
 | Requirement | [ECS](https://aws.amazon.com/ecs/details/) | [Kubernetes](http://kubernetes.io) | [Tutum](https://www.tutum.co) | [Rancher](http://rancher.com) | [Mesosphere](https://mesosphere.com) |
 | --------------- | --- | --- | --- | --- | --- |
 | Production Ready (not beta/alpha) | Y | Y | N | N | Y |
-| *API support* | --- | --- | --- | --- | --- |
+| ***API support*** | | | | | |
 | [Docker Machine](https://docs.docker.com/machine/) Support | N | N | | Y | |
-| *Must Have* | --- | --- | --- | --- | --- |
+| ***Must Have*** | | | | | |
 | Service Discovery by DNS | [?](#ecs-service-discovery-by-dns) | Y | Y | Y | |
 | Local Deployments (testing) | N | Y | [Y](#tutum-local-deployments) | Y | Y |
 | Private Docker registry support | [?](#ecs-private-registry-support) | [Y](#k8s-private-registry-support) | | | |
