@@ -19,8 +19,8 @@ Comparing:
 
 | API support | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp | lattice | helios | deis |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [Docker Machine](https://docs.docker.com/machine/) | N | N | | Y | |   | | | | |
-| [Docker Swarm](https://docs.docker.com/swarm/)     | N | N | |   | | Y | | | | |
+| [Docker Machine](https://docs.docker.com/machine/) | N | N | | Y | | N | N                        | N | N | N |
+| [Docker Swarm](https://docs.docker.com/swarm/)     | N | N | |   | | Y | [?](#vamp-swarm-support) | N | N | N |
 
 |  Must Have Requirement | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp | lattice | helios | deis |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -78,3 +78,7 @@ It shows minimal state but does not provide any control.
 ## Tutum
 #### Tutum Local Deployments
 As far as I can tell, Tutum is a BYOH (bring your own hardware) so local deployments are possible because Tutum is a hosted API and your hardware 'dials in'.
+
+## vamp
+#### vamp Swarm Support
+Planned.
