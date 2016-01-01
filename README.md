@@ -23,7 +23,7 @@ A comparison of Cluster Orchestration Solutions.
 | Service Discovery of External services (E.g. RDS) | [?](#ecs-service-discovery-of-external-services) | [?](#k8s-service-discovery-of-external-services) | | Y | |
 | Multi-tenancy | N | [Y](#k8s-multi-tenancy) | | Y | |
 | Tagging | N | Y | | Y | |
-| Random port for services (no host/port conflicts) | N | Y | | |
+| Random port for services (no host/port conflicts) | N | | Y | |
 
 | Nice To Have Requirement | [ECS](https://aws.amazon.com/ecs/details/) | [Kubernetes](http://kubernetes.io) | [Tutum](https://www.tutum.co) | [Rancher](http://rancher.com) | [Mesosphere](https://mesosphere.com) |
 | --------------- | --- | --- | --- | --- | --- |
