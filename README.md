@@ -4,8 +4,7 @@ A comparison of Cluster Orchestration Solutions.
 | Requirement | [Kubernetes](http://kubernetes.io) | [Tutum](https://www.tutum.co) | [Rancher](http://rancher.com) | [Mesosphere](https://mesosphere.com) |
 | --------------- | --- | --- | --- | --- |
 | Production Ready (not beta/alpha) | Y | N | N | |
-| Service Discovery by IP | Y | N | | |
-| Service Discovery by DNS | Y | Y | | |
+| Service Discovery by DNS | Y | Y | Y | |
 | Service Discovery of External services (E.g. RDS) | [?](#k8s-service-discovery-of-external-services) | | | |
 | Rolling Updates | Y | | | |
 | Local Deployments | Y | [Y](#tutum-local-deployments) | | |
@@ -16,6 +15,9 @@ A comparison of Cluster Orchestration Solutions.
 | Manage public load balancers | [Y](#k8s-public-load-balancers) | | | |
 | Service Health Checks | Y | | Y | |
 | UI | [?](#k8s-ui) | Y | Y | Y |
+| Container failure recovery (start another) | Y | Y | Y | Y |
+| Tagging | Y | | Y | |
+| Service Graph | N | | Y | |
 
 ## Notes
 ## Kubernetes
