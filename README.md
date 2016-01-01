@@ -15,7 +15,7 @@ A comparison of Cluster Orchestration Solutions.
 | Secure container communication | | Y | | |
 | Manage public load balancers | [Y](#k8s-public-load-balancers) | | | |
 | Service Health Checks | Y | | Y | |
-| UI | ? | | | |
+| UI | [?](#k8s-ui) | Y | Y | Y |
 
 ## Notes
 ## Kubernetes
@@ -29,6 +29,8 @@ Done using *secrets* on each service you define. Kinda clumsy.
 Using Namespaces.
 #### K8S Public Load Balancers
 Kubernetes can create ELBs for specific services.
+#### K8S UI
+It shows minimal state but does not provide any control.
 
 ## Tutum
 #### Tutum Local Deployments
