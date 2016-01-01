@@ -1,16 +1,25 @@
 # My Cluster Orchestration Tool Comparison
 A comparison of Cluster Orchestration Solutions.
 
-| Requirement | [ECS](https://aws.amazon.com/ecs/details/) | [Kubernetes](http://kubernetes.io) | [Tutum](https://www.tutum.co) | [Rancher](http://rancher.com) | [Mesosphere](https://mesosphere.com) | [Shipyard](http://shipyard-project.com) | [vamp](http://vamp.io) |
+Comparing:
+- [ECS](https://aws.amazon.com/ecs/details/)
+- [Kubernetes](http://kubernetes.io)
+- [Tutum](https://www.tutum.co)
+- [Rancher](http://rancher.com)
+- [Mesosphere](https://mesosphere.com) (implicitly including Marathon)
+- [Shipyard](http://shipyard-project.com)
+- [vamp](http://vamp.io)
+
+| Project Status | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp |
 | --------------- | --- | --- | --- | --- | --- | --- | --- |
 | Production Ready (not beta/alpha) | Y | Y | N | N | Y | ? | N |
 
-| API support | [ECS](https://aws.amazon.com/ecs/details/) | [Kubernetes](http://kubernetes.io) | [Tutum](https://www.tutum.co) | [Rancher](http://rancher.com) | [Mesosphere](https://mesosphere.com) | [Shipyard](http://shipyard-project.com) | [vamp](http://vamp.io) |
+| API support | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp |
 | --------------- | --- | --- | --- | --- | --- | --- | --- |
 | [Docker Machine](https://docs.docker.com/machine/) Support | N | N | | Y | | | |
 | [Docker Swarm](https://docs.docker.com/swarm/) | N | N | | | | Y | |
 
-|  Must Have Requirement | [ECS](https://aws.amazon.com/ecs/details/) | [Kubernetes](http://kubernetes.io) | [Tutum](https://www.tutum.co) | [Rancher](http://rancher.com) | [Mesosphere](https://mesosphere.com) | [Shipyard](http://shipyard-project.com) | [vamp](http://vamp.io) |
+|  Must Have Requirement | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp |
 | --------------- | --- | --- | --- | --- | --- | --- | --- |
 | Service Discovery by DNS | [?](#ecs-service-discovery-by-dns) | Y | Y | Y | | | |
 | Local Deployments (testing) | N | Y | [Y](#tutum-local-deployments) | Y | Y | | |
@@ -19,14 +28,14 @@ A comparison of Cluster Orchestration Solutions.
 | Container failure recovery (start another) | Y | Y | Y | Y | Y | | |
 | API/CLI | Y | Y | | Y | Y | | |
 
-| Should Have Requirement | [ECS](https://aws.amazon.com/ecs/details/) | [Kubernetes](http://kubernetes.io) | [Tutum](https://www.tutum.co) | [Rancher](http://rancher.com) | [Mesosphere](https://mesosphere.com) | [Shipyard](http://shipyard-project.com) | [vamp](http://vamp.io) |
+| Should Have Requirement | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp |
 | --------------- | --- | --- | --- | --- | --- | --- | --- |
 | Service Discovery of External services (E.g. RDS) | [?](#ecs-service-discovery-of-external-services) | [?](#k8s-service-discovery-of-external-services) | | Y | | | |
 | Multi-tenancy | N | [Y](#k8s-multi-tenancy) | | Y | | | |
 | Tagging | N | Y | | Y | | | |
 | Random port for services (no host/port conflicts) | N | | Y | | | |
 
-| Nice To Have Requirement | [ECS](https://aws.amazon.com/ecs/details/) | [Kubernetes](http://kubernetes.io) | [Tutum](https://www.tutum.co) | [Rancher](http://rancher.com) | [Mesosphere](https://mesosphere.com) | [Shipyard](http://shipyard-project.com) | [vamp](http://vamp.io) |
+| Nice To Have Requirement | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp |
 | --------------- | --- | --- | --- | --- | --- | --- | --- |
 | Rolling Updates | Y | Y | | Y | | | |
 | Autoscaling of Services | [?](#ecs-autoscaling) | [?](#k8s-autoscaling) | | | | | |
