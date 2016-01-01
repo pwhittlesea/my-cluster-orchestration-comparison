@@ -9,18 +9,19 @@ Comparing:
 - [Mesosphere](https://mesosphere.com) (implicitly including Marathon)
 - [Shipyard](http://shipyard-project.com)
 - [vamp](http://vamp.io)
+- [lattice](http://lattice.cf)
 
-| Project Status | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp |
-| --------------- | --- | --- | --- | --- | --- | --- | --- |
+| Project Status | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp | lattice |
+| --------------- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Production Ready (not beta/alpha) | Y | Y | N | N | Y | ? | N |
 
-| API support | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp |
-| --------------- | --- | --- | --- | --- | --- | --- | --- |
+| API support | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp | lattice |
+| --------------- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [Docker Machine](https://docs.docker.com/machine/) | N | N | | Y | |   | |
 | [Docker Swarm](https://docs.docker.com/swarm/)     | N | N | |   | | Y | |
 
-|  Must Have Requirement | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp |
-| --------------- | --- | --- | --- | --- | --- | --- | --- |
+|  Must Have Requirement | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp | lattice |
+| --------------- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Service Discovery by DNS        | [?](#ecs-service-discovery-by-dns) | Y                                  | Y                             | Y |   | | |
 | Local Deployments (testing)     | N                                  | Y                                  | [Y](#tutum-local-deployments) | Y | Y | | |
 | Private Docker registry support | [?](#ecs-private-registry-support) | [Y](#k8s-private-registry-support) |                               |   |   | | |
@@ -28,15 +29,15 @@ Comparing:
 | Container failure recovery      | Y                                  | Y                                  | Y                             | Y | Y | | |
 | API/CLI                         | Y                                  | Y                                  |                               | Y | Y | | |
 
-| Should Have Requirement | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp |
-| --------------- | --- | --- | --- | --- | --- | --- | --- |
+| Should Have Requirement | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp | lattice |
+| --------------- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Service Discovery of External services (E.g. RDS) | [?](#ecs-service-discovery-of-external-services) | [?](#k8s-service-discovery-of-external-services) |   | Y | | | |
 | Multi-tenancy                                     | N                                                | [Y](#k8s-multi-tenancy)                          |   | Y | | | |
 | Tagging                                           | N                                                | Y                                                |   | Y | | | |
 | Random port for services (no host/port conflicts) | N                                                |                                                  | Y |   | | | |
 
-| Nice To Have Requirement | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp |
-| --------------- | --- | --- | --- | --- | --- | --- | --- |
+| Nice To Have Requirement | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp | lattice |
+| --------------- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Rolling Updates                | Y                     | Y                               |   | Y |   | | |
 | Autoscaling of Services        | [?](#ecs-autoscaling) | [?](#k8s-autoscaling)           |   |   |   | | |
 | Secure container communication |                       |                                 | Y |   |   | | |
