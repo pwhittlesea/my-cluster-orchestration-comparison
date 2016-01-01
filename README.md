@@ -3,27 +3,27 @@ A comparison of Cluster Orchestration Solutions.
 
 | Requirement | [ECS](https://aws.amazon.com/ecs/details/) | [Kubernetes](http://kubernetes.io) | [Tutum](https://www.tutum.co) | [Rancher](http://rancher.com) | [Mesosphere](https://mesosphere.com) |
 | --------------- | --- | --- | --- | --- | --- |
-| *API support* | --- | --- | --- | --- | --- |
 | Production Ready (not beta/alpha) | Y | Y | N | N | Y |
-| *Must Have* | --- | --- | --- | --- | --- |
-| *Should Have* | --- | --- | --- | --- | --- |
-| *Nice to have* | --- | --- | --- | --- | --- |
+| *API support* | --- | --- | --- | --- | --- |
 | [Docker Machine](https://docs.docker.com/machine/) Support | N | N | | Y | |
+| *Must Have* | --- | --- | --- | --- | --- |
 | Service Discovery by DNS | [?](#ecs-service-discovery-by-dns) | Y | Y | Y | |
-| Service Discovery of External services (E.g. RDS) | [?](#ecs-service-discovery-of-external-services) | [?](#k8s-service-discovery-of-external-services) | | | |
-| Rolling Updates | Y | Y | | Y | |
 | Local Deployments (testing) | N | Y | [Y](#tutum-local-deployments) | Y | Y |
-| Autoscaling of Services | [?](#ecs-autoscaling) | [?](#k8s-autoscaling) | | | |
 | Private Docker registry support | [?](#ecs-private-registry-support) | [Y](#k8s-private-registry-support) | | | |
+| Service Health Checks | [?](#ecs-health-checks) | Y | | Y | |
+| Container failure recovery (start another) | Y | Y | Y | Y | Y |
+| *Should Have* | --- | --- | --- | --- | --- |
+| Service Discovery of External services (E.g. RDS) | [?](#ecs-service-discovery-of-external-services) | [?](#k8s-service-discovery-of-external-services) | | | |
 | Multi-tenancy | N | [Y](#k8s-multi-tenancy) | | Y | |
+| Tagging | N | Y | | Y | |
+| Random port for services (no host/port conflicts) | N | Y | | |
+| *Nice to have* | --- | --- | --- | --- | --- |
+| Rolling Updates | Y | Y | | Y | |
+| Autoscaling of Services | [?](#ecs-autoscaling) | [?](#k8s-autoscaling) | | | |
 | Secure container communication | | | Y | | |
 | Manage public load balancers | N | [Y](#k8s-public-load-balancers) | | | |
-| Service Health Checks | [?](#ecs-health-checks) | Y | | Y | |
 | UI | Y | [?](#k8s-ui) | Y | Y | Y |
-| Container failure recovery (start another) | Y | Y | Y | Y | Y |
-| Tagging | N | Y | | Y | |
 | Service Graph | N |N | | Y | |
-| Random port for services (no host/port conflicts) | N | Y | | |
 
 ## Notes
 ## EC2 Container Service (ECS)
