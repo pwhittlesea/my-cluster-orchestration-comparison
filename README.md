@@ -13,18 +13,24 @@ Comparing:
 - [helios](https://github.com/spotify/helios)
 - [deis](http://deis.io)
 
+Key:
+- **blank** = not looked into it
+- Y = supported
+- N = not supported
+- ? = Possibly (see notes)
+
 | Project Status | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp | lattice | helios | deis |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Production Ready (not beta/alpha) | Y | Y | N | N | Y | ? | N | ? | Y | Y |
 
 |  Must Have Requirement | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp | lattice | helios | deis |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Service Discovery by DNS        | [?](#ecs-service-discovery-by-dns) | Y                                  | Y                             | Y |   | | | | | |
+| Service Discovery by DNS        | [?](#ecs-service-discovery-by-dns) | Y                                  | Y                             | Y | Y | | | | | |
 | Local Deployments (testing)     | N                                  | Y                                  | [Y](#tutum-local-deployments) | Y | Y | | | | | |
-| Private Docker registry support | [?](#ecs-private-registry-support) | [Y](#k8s-private-registry-support) |                               |   |   | | | | | |
-| Service Health Checks           | [?](#ecs-health-checks)            | Y                                  |                               | Y |   | | | | | |
+| Private Docker registry support | [?](#ecs-private-registry-support) | [Y](#k8s-private-registry-support) | Y                             | Y | Y | | | | | |
+| Service Health Checks           | [?](#ecs-health-checks)            | Y                                  | ?                             | Y | Y | | | | | |
 | Container failure recovery      | Y                                  | Y                                  | Y                             | Y | Y | | | | | |
-| API/CLI                         | Y                                  | Y                                  |                               | Y | Y | | | | | |
+| API/CLI                         | Y                                  | Y                                  | Y                             | Y | Y | | | | | |
 
 | Should Have Requirement | ECS | Kubernetes | Tutum | Rancher | Mesosphere | Shipyard | vamp | lattice | helios | deis |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
