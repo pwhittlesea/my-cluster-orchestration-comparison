@@ -32,7 +32,7 @@ Key:
 | Private Docker registry support  | [?](#ecs-private-registry-support) | [Y](#k8s-private-registry-support) | Y                             | Y | | Y | | | | | |
 | Service Health Checks            | [?](#ecs-health-checks)            | Y                                  | ?                             | Y | | Y | | | | | |
 | Container failure recovery       | Y                                  | Y                                  | Y                             | Y | | Y | | | | | |
-| API/CLI                          | Y                                  | Y                                  | Y                             | Y | | Y | | | | | |
+| API/CLI                          | [?](#ecs-api)                      | Y                                  | Y                             | Y | | Y | | | | | |
 | Log consolidation (single place) | N                                  | Y                                  | Y                             | Y | | ? | | | | | |
 
 | Should Have Requirement | ECS | Kubernetes | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
@@ -56,6 +56,19 @@ Key:
 | [Docker Machine](https://docs.docker.com/machine/) | N | N | N | Y | | N | N | N                        | N | N | N |
 | [Docker Swarm](https://docs.docker.com/swarm/)     | N | N | N | N | | N | Y | [?](#vamp-swarm-support) | N | N | N |
 
+## Personal Opinions
+The table below outlines some personal opinions on the overall offering of the tools.
+
+| Personal Opinion | ECS | Kubernetes | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
+| --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [Provides isolation](#provides-isolation) | [N](#ecs-isolation) | | | | | | | | | | |
+
+### Provides isolation
+Isolation in this context is the ability for a developer to deploy a service onto a running cluster without having to worry about the underlying hardware.
+Some of these tools come close but a Yes is defined as a 99-100% isolation from the underlying hardware.
+#### ECS Isolation
+ECS does not isolate deployments as you need to create ELBs when you want a load balanced service.
+
 ## Notes
 ## EC2 Container Service (ECS)
 #### ECS Service Discovery by DNS
@@ -69,6 +82,9 @@ I think this can be done if you set up Cloudwatch.
 Have to add credentials to all hardware hosts before system start. Really clumsy (changing whilst running would suck).
 #### ECS Health Checks
 It will check if the container has stopped. Pretty sure thats it. Unless its behind a ELB.
+#### ECS API
+There is an API but this does not include most of the functions required to actually use ECS.
+We have written about ~200+ lines of Bash in order to manage the cluster.
 
 ## Kubernetes
 #### K8S Service Discovery of External Services
