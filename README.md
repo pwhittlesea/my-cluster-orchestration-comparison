@@ -27,13 +27,13 @@ Key:
 
 |  Must Have Requirement | ECS | K8S | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Service Discovery by DNS         | [?](#ecs-service-discovery-by-dns) | Y                                  | Y                             | Y | | Y | | | | | |
-| Local Deployments (testing)      | N                                  | Y                                  | [Y](#tutum-local-deployments) | Y | | Y | | | | | |
-| Private Docker registry support  | [?](#ecs-private-registry-support) | [Y](#k8s-private-registry-support) | Y                             | Y | | Y | | | | | |
-| Service Health Checks            | [?](#ecs-health-checks)            | Y                                  | ?                             | Y | | Y | | | | | |
-| Container failure recovery       | Y                                  | Y                                  | Y                             | Y | | Y | | | | | |
-| API/CLI                          | [?](#ecs-api)                      | Y                                  | Y                             | Y | | Y | | | | | |
-| Log consolidation (single place) | N                                  | Y                                  | Y                             | Y | | ? | | | | | |
+| Service Discovery by DNS         | [?](#ecs-service-discovery-by-dns) | Y                                  | Y                             | Y | Y | Y | | | | | |
+| Local Deployments (testing)      | N                                  | Y                                  | [Y](#tutum-local-deployments) | Y | Y | Y | | | | | |
+| Private Docker registry support  | [?](#ecs-private-registry-support) | [Y](#k8s-private-registry-support) | Y                             | Y | Y | Y | | | | | |
+| Service Health Checks            | [?](#ecs-health-checks)            | Y                                  | ?                             | Y | Y | Y | | | | | |
+| Container failure recovery       | Y                                  | Y                                  | Y                             | Y |   | Y | | | | | |
+| API/CLI                          | [?](#ecs-api)                      | Y                                  | Y                             | Y |   | Y | | | | | |
+| Log consolidation (single place) | N                                  | Y                                  | Y                             | Y |   | ? | | | | | |
 
 | Should Have Requirement | ECS | K8S | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -46,7 +46,7 @@ Key:
 | Nice To Have Requirement | ECS | K8S | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Rolling Updates              | Y                     | Y                               | Y | Y |   | Y |   |   |   |   |   |   |
-| Secure inter-container comms | N                     | N                               | Y | N |   | N |   |   |   |   |   |   |
+| Secure inter-container comms | N                     | N                               | Y | N | Y | N |   |   |   |   |   |   |
 | Manage public load balancers | N                     | [Y](#k8s-public-load-balancers) | N | N |   | N | N | N | N | N | N | N |
 | UI                           | Y                     | [?](#k8s-ui)                    | Y | Y |   | Y |   |   |   |   |   |   |
 | Service Graph                | N                     | N                               | N | Y |   | N |   |   |   |   |   |   |
