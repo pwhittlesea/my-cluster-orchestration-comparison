@@ -46,7 +46,7 @@ Key:
 
 | Nice To Have Requirement | ECS | K8S | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Rolling Updates              | Y                     | Y                               | Y | Y |   | Y |   |   |   |   |   |   |
+| Rolling Updates              | Y                     | Y                               | Y | Y | Y | Y |   |   |   |   |   |   |
 | Secure inter-container comms | N                     | N                               | Y | N | Y | N |   |   |   |   |   |   |
 | Manage public load balancers | N                     | [Y](#k8s-public-load-balancers) | N | N | Y | N | N | N | N | N | N | N |
 | UI                           | Y                     | [?](#k8s-ui)                    | Y | Y | N | Y |   |   |   |   |   |   |
