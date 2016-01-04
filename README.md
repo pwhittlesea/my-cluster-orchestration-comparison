@@ -23,7 +23,7 @@ Key:
 
 | Project Status | ECS | K8S | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Production Ready (not beta/alpha) | Y | Y | N | N | | Y | ? | N | ? | Y | Y |
+| Production Ready (not beta/alpha) | Y | Y | N | N | N | Y | ? | N | ? | Y | Y |
 
 |  Must Have Requirement | ECS | K8S | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
