@@ -38,11 +38,11 @@ Key:
 
 | Should Have Requirement | ECS | K8S | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Service Discovery of External services (E.g. RDS) | [?](#ecs-service-discovery-of-external-services) | [?](#k8s-service-discovery-of-external-services) | N | Y | | N                                                       | | | | | | |
-| Multi-tenancy                                     | N                                                | [Y](#k8s-multi-tenancy)                          | Y | Y | | Y                                                       | | | | | | |
-| Tagging                                           | N                                                | Y                                                | Y | Y | | Y                                                       | | | | | | |
-| Random port for services (no host/port conflicts) | N                                                | Y                                                | Y | Y | | Y                                                       | | | | | | |
-| Autoscaling of Services                           | [?](#ecs-autoscaling)                            | [?](#k8s-autoscaling)                            | N | N | | [N](https://github.com/mesosphere/marathon/issues/1131) | | | | | | |
+| Service Discovery of External services (E.g. RDS) | [?](#ecs-service-discovery-of-external-services) | [?](#k8s-service-discovery-of-external-services) | N | Y | N | N                                                       | | | | | | |
+| Multi-tenancy                                     | N                                                | [Y](#k8s-multi-tenancy)                          | Y | Y | N | Y                                                       | | | | | | |
+| Tagging                                           | N                                                | Y                                                | Y | Y | N | Y                                                       | | | | | | |
+| Random port for services (no host/port conflicts) | N                                                | Y                                                | Y | Y | N | Y                                                       | | | | | | |
+| Autoscaling of Services                           | [?](#ecs-autoscaling)                            | [?](#k8s-autoscaling)                            | N | N | N | [N](https://github.com/mesosphere/marathon/issues/1131) | | | | | | |
 
 | Nice To Have Requirement | ECS | K8S | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
