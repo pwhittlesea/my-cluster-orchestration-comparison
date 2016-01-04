@@ -21,11 +21,11 @@ Key:
 - N = not supported
 - ? = Possibly (see notes)
 
-| Project Status | ECS | Kubernetes | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
+| Project Status | ECS | K8S | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Production Ready (not beta/alpha) | Y | Y | N | N | | Y | ? | N | ? | Y | Y |
 
-|  Must Have Requirement | ECS | Kubernetes | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
+|  Must Have Requirement | ECS | K8S | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Service Discovery by DNS         | [?](#ecs-service-discovery-by-dns) | Y                                  | Y                             | Y | | Y | | | | | |
 | Local Deployments (testing)      | N                                  | Y                                  | [Y](#tutum-local-deployments) | Y | | Y | | | | | |
@@ -35,7 +35,7 @@ Key:
 | API/CLI                          | [?](#ecs-api)                      | Y                                  | Y                             | Y | | Y | | | | | |
 | Log consolidation (single place) | N                                  | Y                                  | Y                             | Y | | ? | | | | | |
 
-| Should Have Requirement | ECS | Kubernetes | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
+| Should Have Requirement | ECS | K8S | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Service Discovery of External services (E.g. RDS) | [?](#ecs-service-discovery-of-external-services) | [?](#k8s-service-discovery-of-external-services) | N | Y | | N                                                       | | | | | | |
 | Multi-tenancy                                     | N                                                | [Y](#k8s-multi-tenancy)                          | Y | Y | | Y                                                       | | | | | | |
@@ -43,15 +43,15 @@ Key:
 | Random port for services (no host/port conflicts) | N                                                | Y                                                | Y | Y | | Y                                                       | | | | | | |
 | Autoscaling of Services                           | [?](#ecs-autoscaling)                            | [?](#k8s-autoscaling)                            | N | N | | [N](https://github.com/mesosphere/marathon/issues/1131) | | | | | | |
 
-| Nice To Have Requirement | ECS | Kubernetes | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
+| Nice To Have Requirement | ECS | K8S | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Rolling Updates              | Y                     | Y                               | Y | Y |   |   |   |   |   |   |   |   |
-| Secure inter-container comms | N                     | N                               | Y | N |   |   |   |   |   |   |   |   |
+| Rolling Updates              | Y                     | Y                               | Y | Y |   | Y |   |   |   |   |   |   |
+| Secure inter-container comms | N                     | N                               | Y | N |   | N |   |   |   |   |   |   |
 | Manage public load balancers | N                     | [Y](#k8s-public-load-balancers) | N | N |   | N | N | N | N | N | N | N |
 | UI                           | Y                     | [?](#k8s-ui)                    | Y | Y |   | Y |   |   |   |   |   |   |
-| Service Graph                | N                     | N                               | N | Y |   |   |   |   |   |   |   |   |
+| Service Graph                | N                     | N                               | N | Y |   | N |   |   |   |   |   |   |
 
-| API support | ECS | Kubernetes | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
+| API support | ECS | K8S | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [Docker Machine](https://docs.docker.com/machine/) | N | N | N | Y | | N | N | N                        | N | N | N |
 | [Docker Swarm](https://docs.docker.com/swarm/)     | N | N | N | N | | N | Y | [?](#vamp-swarm-support) | N | N | N |
