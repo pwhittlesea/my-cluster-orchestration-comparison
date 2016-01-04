@@ -32,8 +32,9 @@ Key:
 | Private Docker registry support  | [?](#ecs-private-registry-support) | [Y](#k8s-private-registry-support) | Y                             | Y | Y | Y | | | | | |
 | Service Health Checks            | [?](#ecs-health-checks)            | Y                                  | ?                             | Y | Y | Y | | | | | |
 | Container failure recovery       | Y                                  | Y                                  | Y                             | Y |   | Y | | | | | |
-| API/CLI                          | [?](#ecs-api)                      | Y                                  | Y                             | Y |   | Y | | | | | |
+| API/CLI                          | [?](#ecs-api)                      | Y                                  | Y                             | Y | Y | Y | | | | | |
 | Log consolidation (single place) | N                                  | Y                                  | Y                             | Y |   | ? | | | | | |
+| Service in multi AZs             |                                    |                                    |                               |   | Y |   | | | | | |
 
 | Should Have Requirement | ECS | K8S | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -47,9 +48,9 @@ Key:
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Rolling Updates              | Y                     | Y                               | Y | Y |   | Y |   |   |   |   |   |   |
 | Secure inter-container comms | N                     | N                               | Y | N | Y | N |   |   |   |   |   |   |
-| Manage public load balancers | N                     | [Y](#k8s-public-load-balancers) | N | N |   | N | N | N | N | N | N | N |
-| UI                           | Y                     | [?](#k8s-ui)                    | Y | Y |   | Y |   |   |   |   |   |   |
-| Service Graph                | N                     | N                               | N | Y |   | N |   |   |   |   |   |   |
+| Manage public load balancers | N                     | [Y](#k8s-public-load-balancers) | N | N | Y | N | N | N | N | N | N | N |
+| UI                           | Y                     | [?](#k8s-ui)                    | Y | Y | N | Y |   |   |   |   |   |   |
+| Service Graph                | N                     | N                               | N | Y | N | N |   |   |   |   |   |   |
 
 | API support | ECS | K8S | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
