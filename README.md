@@ -33,7 +33,7 @@ Key:
 | Service Health Checks            | [?](#ecs-health-checks)            | Y                                  | ?                             | Y | | Y | | | | | |
 | Container failure recovery       | Y                                  | Y                                  | Y                             | Y | | Y | | | | | |
 | API/CLI                          | Y                                  | Y                                  | Y                             | Y | | Y | | | | | |
-| Log consolidation (single place) | N                                  | Y                                  |                               |   | |   | | | | | |
+| Log consolidation (single place) | N                                  | Y                                  | Y                             | Y | | ? | | | | | |
 
 | Should Have Requirement | ECS | Kubernetes | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
