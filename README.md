@@ -34,7 +34,7 @@ Key:
 | Container failure recovery       | Y                                  | Y                                  | Y                             | Y |   | Y | | | | | |
 | API/CLI                          | [?](#ecs-api)                      | Y                                  | Y                             | Y | Y | Y | | | | | |
 | Log consolidation (single place) | N                                  | Y                                  | Y                             | Y |   | ? | | | | | |
-| Service in multi AZs             |                                    |                                    |                               |   | Y |   | | | | | |
+| Service in multi AZs             | Y                                  | Y                                  | Y                             | Y | Y | Y | | | | | |
 
 | Should Have Requirement | ECS | K8S | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
