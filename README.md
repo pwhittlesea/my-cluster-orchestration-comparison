@@ -99,7 +99,7 @@ Using Namespaces.
 #### K8S Public Load Balancers
 Kubernetes can create ELBs for specific services.
 #### K8S UI
-It shows minimal state but does not provide any control.
+[See.](https://github.com/kubernetes/dashboard)
 
 ## Tutum
 #### Tutum Local Deployments
