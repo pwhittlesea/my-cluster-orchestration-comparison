@@ -61,7 +61,7 @@ The table below outlines some personal opinions on the overall offering of the t
 
 | Personal Opinion | ECS | Kubernetes | Tutum | Rancher | Kontena | Mesosphere | Shipyard | vamp | lattice | helios | deis | Swarm |
 | --------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [Provides isolation](#provides-isolation) | [N](#ecs-isolation) | | | | | | | | | | |
+| [Provides isolation](#provides-isolation) | [N](#ecs-isolation) | Y | Y | Y | | Y | | | | | |
 
 ### Provides isolation
 Isolation in this context is the ability for a developer to deploy a service onto a running cluster without having to worry about the underlying hardware.
